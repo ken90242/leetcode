@@ -18,10 +18,6 @@ class Solution:
                     self.firstWrong = prev
                 self.secondWrong = current
 
-        def visitThenIterate(prev, current):
-            findPossibleErrors(prev, current)
-            prev, current = current, current.right
-
         while root:
             if not root.left:
                 findPossibleErrors(pre, root)

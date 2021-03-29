@@ -15,7 +15,9 @@ class Solution:
             elif nums1[i] > nums2[j]:
                 path2 += nums2[j]
                 j += 1
+
             else:
+                # 每次到匯集點時，我們就結算目前最大的路徑
                 ans += max(path1, path2) + nums1[i]
                 path1 = path2 = 0
                 i += 1

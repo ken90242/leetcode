@@ -1,5 +1,5 @@
-1146. Snapshot Array
-
+# 1146. Snapshot Array
+# https://leetcode.com/problems/snapshot-array/
 
 class SnapshotArray:
 
@@ -28,10 +28,3 @@ class SnapshotArray:
                 r = mid - 1
 
         return self.arr[index][l - 1][1]
-
-
-# Your SnapshotArray object will be instantiated and called as such:
-# obj = SnapshotArray(length)
-# obj.set(index,val)
-# param_2 = obj.snap()
-# param_3 = obj.get(index,snap_id)
